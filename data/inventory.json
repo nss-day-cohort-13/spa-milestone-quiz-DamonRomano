@@ -8,7 +8,7 @@
       "color": "FireBrick",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
-    }
+    },
     {
       "make": "Ford",
       "model": "Festiva GL",
@@ -17,7 +17,7 @@
       "color": "White",
       "purchased": false,
       "description": "This festive little Ford has cold A/C, p/s, p/w, p/dl, 5-spd, cassette. 143k miles. Fresh fluids, tires, wipers, door seals. Perfect 1st car."
-    }
+    },
     {
       "make": "Isuzu",
       "model": "Trooper",
@@ -28,4 +28,4 @@
       "description": "The Trooper is an aircraft hanger on wheels; it will carry ALL the things. Slow but sturdy. 4WD, auto, cloth, A/C, power everything. Moving or homeless? This one's for you!"
     }
   ]
-};
+}
