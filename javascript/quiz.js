@@ -3,17 +3,24 @@
 // private variable. It should also expose a public getter to read the
 // array of cars (e.g. getInventory).
 
-var CarLot =
+var CarLot ="";
 
-function populatePage (inventory) {
-  // Loop over the inventory and populate the page
-  for (var i = 0; i < inventory; i++);
+function displayCars () {
+  var inventory = document.getElementById("cars");
+  var carData = JSON.parse(this.responseText);
 
-
-
-  // Now that the DOM is loaded, establish all the event listeners needed
-  CarLot.activateEvents();
+  for (var i = 0; i < carData.cars.length; i++) {
+    var name = carData.cars[i];
+    console.log( "carData name", name );
+  }
 }
+// Loop over the inventory and populate the page
+
+
+
+// Now that the DOM is loaded, establish all the event listeners needed
+  CarLot.activateEvents();
+
 
 // Load the inventory and send a callback function to be
 // invoked after the process is complete
@@ -26,8 +33,8 @@ return {
   loadInventory: function (callback) {
     var pleaseLoadInventory = new XMLHttpRequest();
       pleaseLoadInventory.addEventListener("load", populatePage) ({
-        var data = JSON.parse(this.responseText);
-        fillInventory(data);
+        var carData = JSON.parse(this.responseText);
+        fillInventory(carData);
         callback(inventory);
       pleaseLoadInventory.open( "GET", "inventory.json");
       pleaseLoadInventory.send()
